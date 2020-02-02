@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2774815117075365315}
   - component: {fileID: 1253858036201331057}
   - component: {fileID: 5918720145249785162}
-  - component: {fileID: 5920739751133374726}
   m_Layer: 0
   m_Name: cherry
   m_TagString: Untagged
@@ -114,25 +113,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.006}
   serializedVersion: 2
   m_Radius: 0.08
 --- !u!114 &5918720145249785162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139422979309481783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2f65cb0dee7194b88bd13897b214d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5920739751133374726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

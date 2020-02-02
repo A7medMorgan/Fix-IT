@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public Image Fader;
     private int numberoflevel = 2;
     int currentlevel;
-    string scene_name;
+    int nextlevelindex;
     private int score_gold = 0;
     [SerializeField] private int _Live_count = 3;
     private static int _count_level = 3;
@@ -18,15 +18,22 @@ public class GameManager : MonoBehaviour
     {
         Refresh_player();
         currentlevel = 1;
-        if (!Instance)
+        if (SceneManager.GetActiveScene().buildIndex == 5)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-
+            Destroy(gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            if (!Instance)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
     // Start is called before the first frame update
@@ -77,6 +84,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //nextlevelindex = SceneManager.GetActiveScene().buildIndex; // To Reload scene
+        //loadScene();
         // Level Reload or reset
     }
     public void collect_gold(int amount)
@@ -86,13 +95,18 @@ public class GameManager : MonoBehaviour
     }
     public void NextLevel()
     {
-        scene_name = "level" + currentlevel.ToString();
-        if (currentlevel < numberoflevel)
-        {
-            SceneManager.LoadScene(scene_name);   
-        }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           // nextlevelindex= SceneManager.GetActiveScene().buildIndex +1;
+
     }
-    public void ReloadScene()
+    public void finish()
+    {
+        // nextlevelindex = SceneManager.GetActiveScene().buildIndex + 1;
+
+        SceneManager.LoadScene(1);
+        Destroy(gameObject);
+    }
+    public void loadScene()
     {
         Fader.color = new Color(Fader.color.r, Fader.color.g, Fader.color.b, 0); // incase loss at the time of fading the new scene
         StopCoroutine("FaderReload");
@@ -113,7 +127,7 @@ public class GameManager : MonoBehaviour
         }
         Fader.color = new Color(Fader.color.r, Fader.color.g, Fader.color.b, 1);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(nextlevelindex);
 
         startTime = Time.time;
         while (Time.time < startTime + Duration)

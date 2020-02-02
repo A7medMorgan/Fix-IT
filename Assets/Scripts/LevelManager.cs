@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public static LevelManager Instance;
     [Header("Image Of Heart")] public Image[] Heart;
 
-    public Image Fader;
     public TextMeshProUGUI gold;
     public Slider health_s;
     // Start is called before the first frame update

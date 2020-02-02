@@ -744,7 +744,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44911fbc49e7207498c325f8044d73ef, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -881,7 +881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.537532, y: -0.99859977, z: -10}
+  m_LocalPosition: {x: 3.9479074, y: -0.99859977, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -966,7 +966,7 @@ PrefabInstance:
     - target: {fileID: 511326240913406391, guid: a6ac2c77f63473a4b92443a378979905,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 511326240913406391, guid: a6ac2c77f63473a4b92443a378979905,
         type: 3}
@@ -1040,8 +1040,7 @@ MonoBehaviour:
   - {fileID: 1479271701}
   - {fileID: 1393935486}
   - {fileID: 461919073}
-  Fader: {fileID: 0}
-  gold: {fileID: 0}
+  gold: {fileID: 1418146769}
   health_s: {fileID: 1883135810}
 --- !u!4 &636670963
 Transform:
@@ -1144,7 +1143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &757986324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1885,7 +1884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320145185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.537532, y: -0.99859977, z: -10}
+  m_LocalPosition: {x: 3.9479074, y: -0.99859977, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 841468698}
@@ -1916,6 +1915,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4926216491037713107}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1418146769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2038233191008366838, guid: 46d0860b7a585cd4daabb9330928def8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2038233191874914878}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1479271701 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2038233190400167723, guid: 46d0860b7a585cd4daabb9330928def8,
@@ -2276,7 +2287,7 @@ GameObject:
   - component: {fileID: 1799218722}
   m_Layer: 0
   m_Name: FirstPiece
-  m_TagString: The goal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2322,7 +2333,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2396,8 +2407,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799218721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.36, y: -0.73, z: 0}
-  m_LocalScale: {x: 0.27449, y: 0.27449, z: 0.27449}
+  m_LocalPosition: {x: 70.41, y: -2.28, z: 0}
+  m_LocalScale: {x: 0.08844891, y: 0.08844891, z: 0.08844891}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -3386,7 +3397,7 @@ PrefabInstance:
     - target: {fileID: 971229774208061068, guid: 11cc6187c4da5d342817e3bda05baa55,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.026333213
+      value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 971229774208061068, guid: 11cc6187c4da5d342817e3bda05baa55,
         type: 3}

@@ -9,7 +9,8 @@ public class prize : MonoBehaviour
     {
         if (collision.tag == "player")
         {
-            LevelManager.Instance.Update_gold(amount_gold);
+            GameManager.Instance.collect_gold(amount_gold);
+            GameManager.Instance.Increse_health(40);
             Destroy(gameObject);
         }
     }
