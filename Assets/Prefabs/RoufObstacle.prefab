@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3987571135636966678}
   - component: {fileID: -1512910780020648649}
   - component: {fileID: 2883073091933760733}
-  - component: {fileID: 5075129073903771632}
   m_Layer: 0
   m_Name: RoufObstacle
   m_TagString: enemy
@@ -114,7 +113,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -142,29 +141,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292fa13c1cfee243864eaf5fde46008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &5075129073903771632
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6748833931687736162}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1021705}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.45, y: 0.87}
-    newSize: {x: 2.45, y: 0.87}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.45, y: 0.665659}
-  m_EdgeRadius: 0
