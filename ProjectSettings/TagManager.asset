@@ -7,6 +7,7 @@ TagManager:
   - ground
   - player
   - enemy
+  - The goal
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: BackGround
     uniqueID: 1682407597
+    locked: 0
+  - name: Obstacle
+    uniqueID: 144061895
     locked: 0
   - name: Ground
     uniqueID: 2486627425
